@@ -1,0 +1,10 @@
+.d-c {
+    border: 3px solid rgb(97, 41, 41);
+    background: burlywood;
+    padding: 10px;
+    width:80px;
+    text-align: center;
+}
+.day-c{
+    font-size: xx-large;
+}

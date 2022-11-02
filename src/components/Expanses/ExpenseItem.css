@@ -1,0 +1,21 @@
+.expense-wrap{
+ background-color: rgba(49, 206, 193, 0.342);
+ display: flex;
+}
+.date-class {
+    padding: 10px 100px;
+}
+.expense-inner {
+    padding: 10px 100px;
+}
+.amount-class {
+    padding: 30px 100px;
+}
+.expense-wrap {
+    margin: 20px;
+    border-radius: 25px;
+}
+button.btn-c {
+    margin: 50px;
+}
+
