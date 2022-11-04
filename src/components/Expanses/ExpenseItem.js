@@ -7,14 +7,15 @@ function ExpenseItem(data){
     // const ExpenseDate =new Date(2022,10,21);
     // const ExpenseTitle="car Insurance";
     // const ExpenseAmount = 100;
-    const [title,setTitle]= useState(data.title);
+   
     //let title = data.title;
-    
-    const clickhandler=()=>{
-        setTitle('UPDATED');
-        //title= 'updated!';
-     console.log(title);
-    };
+  const[titlename,SetNewTitle]=useState(data.title);
+
+  const clickHander=()=>{
+    SetNewTitle('changed');
+    //console.log('evaluted');
+  }
+   
     return (<Card className="expense-wrap">
                 <div className="date-class">
                     <ExpenseDate date={data.date}/>
@@ -22,10 +23,10 @@ function ExpenseItem(data){
                  
                 </div>
                 <div className="expense-inner">
-                    <h2>{title}</h2>
+                    <h2>{titlename}</h2>
                  </div>
                  <div className="amount-class">${data.amount}</div>
-                 <button  className='btn-c'  onClick={clickhandler}>change title</button>
+                 <button  className='btn-c' onClick={clickHander} >change title</button>
             </Card>
             );
 }

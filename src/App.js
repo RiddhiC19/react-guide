@@ -1,5 +1,6 @@
 
 import ExpenseItem from './components/Expanses/ExpenseItem';
+import NewExpance from './components/NewExpanse/NewExpance';
 import logo from './logo.svg';
 import './App.css';
 
@@ -27,10 +28,14 @@ function App() {
       }
     ];
 
+     const AddExpenceHandler =expence=>{
+      console.log('in app.js');
+      console.log(expence);
+     };
   return (
     <div className="outer-wrap">
       <h2>React demo</h2>
-
+    <NewExpance onAddExpance={AddExpenceHandler}></NewExpance>
     <ExpenseItem date={expence[0].date}
                 title={expence[0].title}
                 amount={expence[0].amount} > 
