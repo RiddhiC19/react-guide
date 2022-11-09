@@ -9,6 +9,7 @@ const NewExpance=(data)=>{
         ...enterExpanceData,
         id:Math.random().toString()
       };
+      console.log(expanceData);
      data.onAddExpance(expanceData);
     };
 

@@ -60,7 +60,7 @@ const submitHandler=(event)=>{
         value={Enterdate}
          onChange={dateChangeHandler}/>
     </div>
-    <div className="new-ex-control">
+    <div className="new-ex-action">
       <button type="submit">Add values</button>
     </div>
 
